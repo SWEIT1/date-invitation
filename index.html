@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff0e6">
+    <title>Приглашение ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="screen-invitation">
+
+    <main id="app">
+
+        <!-- SCREEN 1: INVITATION -->
+        <section class="screen active" id="screen-invitation">
+            <h1>У меня к тебе вопрос...</h1>
+            <p>Пойдёшь со мной на свидание?</p>
+
+            <div class="button-container" id="invite-buttons">
+                <button id="yes-button">Да ❤️</button>
+                <button id="no-button">Нет &#x1F622;</button>
+            </div>
+        </section>
+
+        <!-- SCREEN 2: DATE -->
+        <section class="screen" id="screen-date">
+            <h1>Я знал что ты ответишь ДА</h1>
+            <p>Тогда давай выберем дату. Когда ты свободна?</p>
+
+            <div id="calendar" class="calendar"></div>
+
+            <button id="date-next" disabled>Продолжить</button>
+        </section>
+
+        <!-- SCREEN 3: CINEMA -->
+        <section class="screen" id="screen-cinema">
+            <h1>Куда отправимся?</h1>
+            <p>Выбирай...</p>
+
+            <div id="cinema-options" class="options"></div>
+
+            <button id="cinema-next" disabled>Дальше</button>
+        </section>
+
+        <!-- SCREEN 4: FOOD -->
+        <section class="screen" id="screen-food">
+            <h1>После кино...</h1>
+            <p>Нужно будет подкрепиться 🍽️</p>
+
+            <div id="food-options" class="options"></div>
+
+            <button id="food-next" disabled>Дальше</button>
+        </section>
+
+        <!-- SCREEN 5: FINAL -->
+        <section class="screen" id="screen-final">
+            <h1>Ну всё, договорились! ❤️</h1>
+            <p>29 ноября 2026 года.</p>
+            <p>Буду ждать тебя!</p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
